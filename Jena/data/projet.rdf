@@ -1,0 +1,971 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:tourismeDurable="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#"
+    xmlns="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formation_touristique">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formations"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Infrastructure">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Ferme"/>
+          <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#académie"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvenementSaisonnier">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Evenement"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#académie">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Infrastructure"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#LieuFormationTouristique">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Lieu"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Evenement">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#CampagnePromotionnelle"/>
+          <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvenementSaisonnier"/>
+          <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvenementTouristique"/>
+          <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#FêteReligieuse"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Activite">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActiviteAgricole"/>
+          <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActiviteTouristique"/>
+          <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Promotion"/>
+          <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formations"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#guide">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Employee"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formations">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Activite"/>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formation_professionnel"/>
+          <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formation_touristique"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Promotion">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Activite"/>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onClass>
+          <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#CampagnePromotionnelle"/>
+        </owl:onClass>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:minQualifiedCardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Promotion_est_Associée_à_CampagnePromotionnelle"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Souvenir"/>
+        </owl:someValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Promtion_Contient_Souvenirs"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActiviteTouristique">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Activite"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActiviteAgricole">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Activite"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Employee">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Personne"/>
+    </rdfs:subClassOf>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formateur"/>
+          <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#guide"/>
+          <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#organisateurs_d_activite"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#CampagnePromotionnelle">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Evenement"/>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onClass rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Promotion"/>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:minQualifiedCardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#CampagnePromotionnelle_Contient_Promotion"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Personne">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Employee"/>
+          <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Propriétaire"/>
+          <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Touriste"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Communauté_Religieuse"/>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvenementTouristique">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Evenement"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#FêteReligieuse">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Evenement"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formation_professionnel">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formations"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Lieu">
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#LieuCulte"/>
+          <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#LieuFormationTouristique"/>
+          <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#lieuTouristique"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#lieuTouristique">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Lieu"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Touriste">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Personne"/>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Souvenir"/>
+        </owl:someValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Toursite_Acheter_Souvenirs"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#organisateurs_d_activite">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Employee"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Propriétaire">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Personne"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Souvenir">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onClass rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Promotion"/>
+        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:minQualifiedCardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Souvenir_Appartient_à_Promotion"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Touriste"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Souvenir_estVendu_Touriste"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formateur">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Employee"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Ferme">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Infrastructure"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#LieuCulte">
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Lieu"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Touriste-Apprendre-FormationTouristique">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formation_touristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Touriste"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Apprendre"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Evaluer"/>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#FormationTouristique_Associé_LieuFormationTouristique">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#LieuFormationTouristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formation_touristique"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#LieuFormationTouristique_Associé_FormationTouristique"/>
+    </owl:inverseOf>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Associer"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#FêteReligieuse_Associé_CommunautéReligieuse">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Communauté_Religieuse"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#FêteReligieuse"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Associer"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EstVendu">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Personne"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvênementTouristique_Contient_ActivitéTouristique">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActiviteTouristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvenementTouristique"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Contient"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Participant_participe_ActivitéTouristique">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActiviteTouristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Propriétaire"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formateur"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#guide"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Employee"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#participer"/>
+    </rdfs:subPropertyOf>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Personne"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#organisateurs_d_activite"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Touriste"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#CampagnePromotionnelle_Contient_Promotion">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Promotion"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#CampagnePromotionnelle"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Promotion_est_Associée_à_CampagnePromotionnelle"/>
+    </owl:inverseOf>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Contient"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#guide_Associé_ActivitéTouristique">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActiviteTouristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#guide"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Associer"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Participant_participe_EvênementTouristique">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvenementTouristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Personne"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Propriétaire"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Employee"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#participer"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#organisateurs_d_activite"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formateur"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#guide"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Touriste"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#LieuCulte_Associé_FêteReligieuse">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#FêteReligieuse"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#LieuCulte"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Associer"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Souvenir_Appartient_à_Promotion">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Promotion"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Souvenir"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Appartient"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Employé_Apprendre_FormationProfessionnelle">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formation_professionnel"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Employee"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Apprendre"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formateur_Associé_FormationTouristique">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formation_touristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formateur"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Associer"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#organisateur_d_activite_EstResponsable_Formations">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formations"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#organisateurs_d_activite"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EstResponsable"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActivitéTouristique_Associé_LieuTouristique">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#lieuTouristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActiviteTouristique"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Associer"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Ferme_Propose_ActivitéAgricole">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActiviteAgricole"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Ferme"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#participer"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#CommunautéReligieuse_Contient_Touriste">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Touriste"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Communauté_Religieuse"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Contient"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#LieuCulte_Associé_CommunautéReligieuse">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Communauté_Religieuse"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#LieuCulte"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Associer"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Touriste_participe_ActivitéAgricole">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActiviteAgricole"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Touriste"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#participer"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Ferme_participe_EvenementSaisonnier">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvenementSaisonnier"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Ferme"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#participer"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Formateur_enseigne_FormationProfessionnelle">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formation_professionnel"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formateur"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Enseigner"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Touriste_Evaluer_Employee">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Employee"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Touriste"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Evaluer"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#FormationProfesionnelle_Appartient_Académie">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#académie"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formation_professionnel"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Appartient"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Employee_EstEvalué_Touriste">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Touriste"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Employee"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Evaluer"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Souvenir_estVendu_Touriste">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Touriste"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Souvenir"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Toursite_Acheter_Souvenirs"/>
+    </owl:inverseOf>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EstVendu"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Acheter">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Personne"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#travailleDans">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Infrastructure"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Employee"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Formateur_Associé_Académie">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#académie"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formateur"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Associer"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#CommunautéReligieuse_Célèbre_FêteReligieuse">
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#FêteReligieuse_Associé_CommunautéReligieuse"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#célébrer"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Formateur_EstResponsable_Académie">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#académie"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formateur"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EstResponsable"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#LieuFormationTouristique_Associé_FormationTouristique">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formation_touristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#LieuFormationTouristique"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Associer"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Académie_Contient_FormationProfesionnelle">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formation_professionnel"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#académie"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#FormationProfesionnelle_Appartient_Académie"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Contient"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvênementTouristique_Associé_LieuTouristique">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#lieuTouristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvenementTouristique"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Associer"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#LieuCulte_Appartient_Propriétaire">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Propriétaire"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#LieuCulte"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Propriétaire_EstResponsable_LieuCulte"/>
+    </owl:inverseOf>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Appartient"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Propriétaire_EstResponsable_LieuCulte">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#LieuCulte"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Propriétaire"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EstResponsable"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#guide_Associé_FormationTouristique">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formation_touristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#guide"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Associer"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvenementSaisonnier_contient_ActivitéAgricole">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActiviteAgricole"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvenementSaisonnier"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Contient"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActivitéAgricole_Associé_EvenementSaisonnier">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvenementSaisonnier"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActiviteAgricole"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvenementSaisonnier_contient_ActivitéAgricole"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Associer"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Toursite_Acheter_Souvenirs">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Souvenir"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Touriste"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Acheter"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Promotion_est_Associée_à_CampagnePromotionnelle">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#CampagnePromotionnelle"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Promotion"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Associer"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Promtion_Contient_Souvenirs">
+    <rdfs:range rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Souvenir"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Promotion"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Souvenir_Appartient_à_Promotion"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Contient"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#niveau">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formation_professionnel"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#nbrParticipants">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvenementTouristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActiviteTouristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActiviteAgricole"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#dateDebut">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formation_touristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formation_professionnel"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Promotion"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvenementTouristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#CampagnePromotionnelle"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActiviteTouristique"/>
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#date"/>
+    </rdfs:subPropertyOf>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#stock">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Souvenir"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#capacité_d_accueil">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#lieuTouristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#LieuCulte"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#description">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#LieuCulte"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formation_professionnel"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvenementSaisonnier"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formation_touristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#FêteReligieuse"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Souvenir"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Ferme"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#académie"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#CampagnePromotionnelle"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActiviteAgricole"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Communauté_Religieuse"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#superficieFerme">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Ferme"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#role">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#organisateurs_d_activite"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#guide"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formateur"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Personne"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#prix">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Souvenir"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActiviteAgricole"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#dateFin">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formation_touristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formation_professionnel"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Promotion"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvenementTouristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#CampagnePromotionnelle"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActiviteTouristique"/>
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#date"/>
+    </rdfs:subPropertyOf>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#produitsCultivesFerme">
+    <rdfs:comment>le rpoduit devient une classe !!!!!!</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#durée">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formation_touristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formation_professionnel"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#FêteReligieuse"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActiviteTouristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActiviteAgricole"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#nom">
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formation_professionnel"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Ferme"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Promotion"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#FêteReligieuse"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Communauté_Religieuse"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActiviteTouristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvenementSaisonnier"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#CampagnePromotionnelle"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#académie"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#LieuCulte"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#LieuFormationTouristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Personne"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvenementTouristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#lieuTouristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActiviteAgricole"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Souvenir"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formation_touristique"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#date">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#FêteReligieuse"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvenementSaisonnier"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#objectif">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvenementTouristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#CampagnePromotionnelle"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#nbrAnnéesExpérience">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#organisateurs_d_activite"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formateur"/>
+  </owl:DatatypeProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#moduleDurableFormationTouristique">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formation_touristique"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#feedbackParticipant">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Personne"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#nationnalite">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Personne"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#age">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Personne"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#biographieFormateur">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formateur"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#spécialitéFormateur">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formateur"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#populationCommunautéReligieuse">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Communauté_Religieuse"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#moyenTransportParticipant">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Personne"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#typeActivitéTouristique">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActiviteTouristique"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#saisonEvenemetSaisonnier">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvenementSaisonnier"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#impactEnvironnementalActivitéTouristique">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActiviteTouristique"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#localisation">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#lieuTouristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#académie"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#LieuFormationTouristique"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#LieuCulte"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Ferme"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActiviteAgricole"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#matérielNécessaireActivitéTouristique">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActiviteTouristique"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </owl:FunctionalProperty>
+  <tourismeDurable:EvenementTouristique rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvênementTouristique1">
+    <tourismeDurable:objectif>ODD 3 : accès à la santé</tourismeDurable:objectif>
+    <tourismeDurable:nom>ET1</tourismeDurable:nom>
+    <tourismeDurable:nbrParticipants rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >700</tourismeDurable:nbrParticipants>
+    <tourismeDurable:dateFin>29-09-2024</tourismeDurable:dateFin>
+    <tourismeDurable:dateDebut>20-09-2024</tourismeDurable:dateDebut>
+    <tourismeDurable:EvênementTouristique_Contient_ActivitéTouristique>
+      <tourismeDurable:ActiviteTouristique rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActivitéTouristique1">
+        <tourismeDurable:ActivitéTouristique_Associé_LieuTouristique>
+          <tourismeDurable:lieuTouristique rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#LieuTouristique1">
+            <tourismeDurable:nom>LT1</tourismeDurable:nom>
+            <tourismeDurable:localisation>localisationLC1</tourismeDurable:localisation>
+            <tourismeDurable:capacité_d_accueil rdf:datatype=
+            "http://www.w3.org/2001/XMLSchema#decimal">200</tourismeDurable:capacité_d_accueil>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </tourismeDurable:lieuTouristique>
+        </tourismeDurable:ActivitéTouristique_Associé_LieuTouristique>
+        <tourismeDurable:typeActivitéTouristique>type1(sportif)</tourismeDurable:typeActivitéTouristique>
+        <tourismeDurable:nbrParticipants rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >20</tourismeDurable:nbrParticipants>
+        <tourismeDurable:impactEnvironnementalActivitéTouristique
+        >modéré</tourismeDurable:impactEnvironnementalActivitéTouristique>
+        <tourismeDurable:dateFin>20-09-2024</tourismeDurable:dateFin>
+        <tourismeDurable:durée rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >5</tourismeDurable:durée>
+        <tourismeDurable:dateDebut>20-09-2024</tourismeDurable:dateDebut>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <tourismeDurable:matérielNécessaireActivitéTouristique
+        >15 vélos</tourismeDurable:matérielNécessaireActivitéTouristique>
+        <tourismeDurable:nom>AT 1</tourismeDurable:nom>
+      </tourismeDurable:ActiviteTouristique>
+    </tourismeDurable:EvênementTouristique_Contient_ActivitéTouristique>
+    <tourismeDurable:EvênementTouristique_Associé_LieuTouristique rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#LieuTouristique1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </tourismeDurable:EvenementTouristique>
+  <tourismeDurable:Evenement rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Event1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </tourismeDurable:Evenement>
+  <rdf:Description rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable/John">
+    <role>Senior</role>
+    <specialite>Computer</specialite>
+    <nbrAnneesExperience>10</nbrAnneesExperience>
+    <biographie>Anexperienced</biographie>
+    <rdfs:label>John</rdfs:label>
+  </rdf:Description>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Produit1"/>
+  <tourismeDurable:Activite rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Activite1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </tourismeDurable:Activite>
+  <rdf:Description rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable/Joith">
+    <description>Senior</description>
+    <nbrParticipants>12</nbrParticipants>
+    <localisation>Computer</localisation>
+    <prix>10.0</prix>
+    <duree>experienced</duree>
+    <rdfs:label>Joith</rdfs:label>
+  </rdf:Description>
+  <tourismeDurable:organisateurs_d_activite rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#organisateur2">
+    <tourismeDurable:role>roleOA2</tourismeDurable:role>
+    <tourismeDurable:nom>Fahed</tourismeDurable:nom>
+    <tourismeDurable:nbrAnnéesExpérience rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >20</tourismeDurable:nbrAnnéesExpérience>
+    <tourismeDurable:organisateur_d_activite_EstResponsable_Formations>
+      <tourismeDurable:formation_touristique rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formationTouristique2">
+        <tourismeDurable:nom>FT2</tourismeDurable:nom>
+        <tourismeDurable:moduleDurableFormationTouristique>ODD 2 : Lutte contre la faim</tourismeDurable:moduleDurableFormationTouristique>
+        <tourismeDurable:durée rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >2</tourismeDurable:durée>
+        <tourismeDurable:description>DescriptionFT2</tourismeDurable:description>
+        <tourismeDurable:dateFin>22-09-2024</tourismeDurable:dateFin>
+        <tourismeDurable:dateDebut>21-09-2024</tourismeDurable:dateDebut>
+        <tourismeDurable:FormationTouristique_Associé_LieuFormationTouristique>
+          <tourismeDurable:LieuFormationTouristique rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#lieuFormationTouristique2">
+            <tourismeDurable:nom>LieuFT2</tourismeDurable:nom>
+            <tourismeDurable:localisation>Aouina</tourismeDurable:localisation>
+            <tourismeDurable:LieuFormationTouristique_Associé_FormationTouristique rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formationTouristique2"/>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </tourismeDurable:LieuFormationTouristique>
+        </tourismeDurable:FormationTouristique_Associé_LieuFormationTouristique>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </tourismeDurable:formation_touristique>
+    </tourismeDurable:organisateur_d_activite_EstResponsable_Formations>
+    <tourismeDurable:organisateur_d_activite_EstResponsable_Formations>
+      <tourismeDurable:formation_touristique rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formationTouristique1">
+        <tourismeDurable:nom>FT1</tourismeDurable:nom>
+        <tourismeDurable:moduleDurableFormationTouristique>ODD 1 : Eradication de la Pauvreté</tourismeDurable:moduleDurableFormationTouristique>
+        <tourismeDurable:durée rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >1</tourismeDurable:durée>
+        <tourismeDurable:description>descriptionFT1</tourismeDurable:description>
+        <tourismeDurable:dateFin>21-09-2024</tourismeDurable:dateFin>
+        <tourismeDurable:dateDebut>21-09-2024</tourismeDurable:dateDebut>
+        <tourismeDurable:FormationTouristique_Associé_LieuFormationTouristique>
+          <tourismeDurable:LieuFormationTouristique rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#lieuFormationTouristique1">
+            <tourismeDurable:nom>LieuFT1</tourismeDurable:nom>
+            <tourismeDurable:localisation>Bardo</tourismeDurable:localisation>
+            <tourismeDurable:LieuFormationTouristique_Associé_FormationTouristique rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formationTouristique1"/>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </tourismeDurable:LieuFormationTouristique>
+        </tourismeDurable:FormationTouristique_Associé_LieuFormationTouristique>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </tourismeDurable:formation_touristique>
+    </tourismeDurable:organisateur_d_activite_EstResponsable_Formations>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </tourismeDurable:organisateurs_d_activite>
+  <rdf:Description rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable/testtt">
+    <nbrParticipants>12</nbrParticipants>
+    <localisation>Computer</localisation>
+    <prix>10.0</prix>
+    <duree>experienced</duree>
+    <description>Senior</description>
+  </rdf:Description>
+  <tourismeDurable:organisateurs_d_activite rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Organisateur1">
+    <tourismeDurable:role>roleOA1</tourismeDurable:role>
+    <tourismeDurable:nom>Moncef</tourismeDurable:nom>
+    <tourismeDurable:nbrAnnéesExpérience rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >5</tourismeDurable:nbrAnnéesExpérience>
+    <tourismeDurable:organisateur_d_activite_EstResponsable_Formations>
+      <tourismeDurable:formation_professionnel rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formationProfesionnelle2">
+        <tourismeDurable:nom>FP2</tourismeDurable:nom>
+        <tourismeDurable:niveau>avancé</tourismeDurable:niveau>
+        <tourismeDurable:durée rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >5</tourismeDurable:durée>
+        <tourismeDurable:description>descriptionFP2</tourismeDurable:description>
+        <tourismeDurable:dateFin>26-09-2024</tourismeDurable:dateFin>
+        <tourismeDurable:dateDebut>21-09-2024</tourismeDurable:dateDebut>
+        <tourismeDurable:FormationProfesionnelle_Appartient_Académie>
+          <tourismeDurable:académie rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#académie1">
+            <tourismeDurable:nom>AcaémieTaher</tourismeDurable:nom>
+            <tourismeDurable:localisation>adresseAcadémie1</tourismeDurable:localisation>
+            <tourismeDurable:description>descriptionAcadémie1</tourismeDurable:description>
+            <tourismeDurable:Académie_Contient_FormationProfesionnelle rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formationProfesionnelle2"/>
+            <tourismeDurable:Académie_Contient_FormationProfesionnelle>
+              <tourismeDurable:formation_professionnel rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formationProfesionnelle1">
+                <tourismeDurable:description>descriptionFP1</tourismeDurable:description>
+                <tourismeDurable:durée rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+                >10</tourismeDurable:durée>
+                <rdfs:comment>durée en jours</rdfs:comment>
+                <tourismeDurable:nom>FP1</tourismeDurable:nom>
+                <tourismeDurable:niveau>intermédiaire</tourismeDurable:niveau>
+                <tourismeDurable:dateDebut>20-09-2024</tourismeDurable:dateDebut>
+                <tourismeDurable:FormationProfesionnelle_Appartient_Académie rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#académie1"/>
+                <tourismeDurable:dateFin>21-09-2024</tourismeDurable:dateFin>
+                <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+              </tourismeDurable:formation_professionnel>
+            </tourismeDurable:Académie_Contient_FormationProfesionnelle>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </tourismeDurable:académie>
+        </tourismeDurable:FormationProfesionnelle_Appartient_Académie>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </tourismeDurable:formation_professionnel>
+    </tourismeDurable:organisateur_d_activite_EstResponsable_Formations>
+    <tourismeDurable:organisateur_d_activite_EstResponsable_Formations rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formationProfesionnelle1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </tourismeDurable:organisateurs_d_activite>
+  <rdf:Description rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable/tahertt">
+    <nbrParticipants>14</nbrParticipants>
+    <localisation>Localisation1</localisation>
+    <prix>235.0</prix>
+    <duree>5 heures</duree>
+    <description>Description1</description>
+  </rdf:Description>
+  <tourismeDurable:Ferme rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Ferme1">
+    <tourismeDurable:superficieFerme rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >5000</tourismeDurable:superficieFerme>
+    <tourismeDurable:nom>F1</tourismeDurable:nom>
+    <tourismeDurable:localisation>localisation F1</tourismeDurable:localisation>
+    <tourismeDurable:description>description F3</tourismeDurable:description>
+    <tourismeDurable:Ferme_participe_EvenementSaisonnier>
+      <tourismeDurable:EvenementSaisonnier rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvenementSaisonnier1">
+        <tourismeDurable:saisonEvenemetSaisonnier>été</tourismeDurable:saisonEvenemetSaisonnier>
+        <tourismeDurable:nom>ES1</tourismeDurable:nom>
+        <tourismeDurable:description>descriptionES1</tourismeDurable:description>
+        <tourismeDurable:date>20-09-2024</tourismeDurable:date>
+        <tourismeDurable:EvenementSaisonnier_contient_ActivitéAgricole>
+          <tourismeDurable:ActiviteAgricole rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActivitéAgricole1">
+            <tourismeDurable:prix rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+            >20</tourismeDurable:prix>
+            <tourismeDurable:nom>AA1</tourismeDurable:nom>
+            <tourismeDurable:nbrParticipants rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+            >50</tourismeDurable:nbrParticipants>
+            <tourismeDurable:localisation>Localisation AA1</tourismeDurable:localisation>
+            <tourismeDurable:durée rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+            >16</tourismeDurable:durée>
+            <tourismeDurable:description>decriptionAA1</tourismeDurable:description>
+            <tourismeDurable:ActivitéAgricole_Associé_EvenementSaisonnier rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvenementSaisonnier1"/>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </tourismeDurable:ActiviteAgricole>
+        </tourismeDurable:EvenementSaisonnier_contient_ActivitéAgricole>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </tourismeDurable:EvenementSaisonnier>
+    </tourismeDurable:Ferme_participe_EvenementSaisonnier>
+    <tourismeDurable:Ferme_Propose_ActivitéAgricole rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActivitéAgricole1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </tourismeDurable:Ferme>
+  <rdf:Description rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable/griba">
+    <localisation>jerba</localisation>
+    <capaciteDAccueil>200</capaciteDAccueil>
+    <description>good</description>
+    <rdfs:label>griba</rdfs:label>
+  </rdf:Description>
+  <tourismeDurable:guide rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#guide1">
+    <tourismeDurable:role>roleG1</tourismeDurable:role>
+    <tourismeDurable:nom>Youssef</tourismeDurable:nom>
+    <tourismeDurable:guide_Associé_FormationTouristique rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formationTouristique1"/>
+    <tourismeDurable:guide_Associé_ActivitéTouristique rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActivitéTouristique1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </tourismeDurable:guide>
+  <rdf:Description rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable/activite1">
+    <description>Description1</description>
+    <nbrParticipants>14</nbrParticipants>
+    <localisation>Localisation1</localisation>
+    <prix>235.0</prix>
+    <duree>5 heures</duree>
+    <rdfs:label>activite1</rdfs:label>
+  </rdf:Description>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formateur1">
+    <tourismeDurable:Formateur_enseigne_FormationProfessionnelle rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formationProfesionnelle1"/>
+    <tourismeDurable:Formateur_Associé_Académie rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#académie1"/>
+    <tourismeDurable:formateur_Associé_FormationTouristique rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formationTouristique1"/>
+    <tourismeDurable:nom>Rahma</tourismeDurable:nom>
+    <tourismeDurable:Formateur_EstResponsable_Académie rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#académie1"/>
+    <tourismeDurable:nbrAnnéesExpérience rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >15</tourismeDurable:nbrAnnéesExpérience>
+    <tourismeDurable:biographieFormateur>biographieRahma</tourismeDurable:biographieFormateur>
+    <tourismeDurable:role>roleF1</tourismeDurable:role>
+    <tourismeDurable:spécialitéFormateur>Formations Durables</tourismeDurable:spécialitéFormateur>
+    <rdf:type rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formateur"/>
+  </owl:NamedIndividual>
+  <rdf:Description rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable/activite2">
+    <description>Description1</description>
+    <nbrParticipants>14</nbrParticipants>
+    <localisation>Localisation1</localisation>
+    <prix>235.0</prix>
+    <duree>5 heures</duree>
+    <rdfs:label>activite2</rdfs:label>
+  </rdf:Description>
+  <tourismeDurable:guide rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#guide2">
+    <tourismeDurable:role>roleG2</tourismeDurable:role>
+    <tourismeDurable:nom>Marouene</tourismeDurable:nom>
+    <tourismeDurable:guide_Associé_FormationTouristique rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formationTouristique2"/>
+    <tourismeDurable:guide_Associé_ActivitéTouristique>
+      <tourismeDurable:ActiviteTouristique rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActivitéTouristique2">
+        <tourismeDurable:dateDebut>20-09-2024</tourismeDurable:dateDebut>
+        <tourismeDurable:nom>AT 2</tourismeDurable:nom>
+        <tourismeDurable:impactEnvironnementalActivitéTouristique
+        >faible</tourismeDurable:impactEnvironnementalActivitéTouristique>
+        <tourismeDurable:ActivitéTouristique_Associé_LieuTouristique>
+          <tourismeDurable:lieuTouristique rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#LieuTouristique2">
+            <tourismeDurable:nom>LC2</tourismeDurable:nom>
+            <tourismeDurable:localisation>localisationLC2</tourismeDurable:localisation>
+            <tourismeDurable:capacité_d_accueil rdf:datatype=
+            "http://www.w3.org/2001/XMLSchema#decimal">300</tourismeDurable:capacité_d_accueil>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </tourismeDurable:lieuTouristique>
+        </tourismeDurable:ActivitéTouristique_Associé_LieuTouristique>
+        <tourismeDurable:durée rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >15</tourismeDurable:durée>
+        <tourismeDurable:typeActivitéTouristique>type2</tourismeDurable:typeActivitéTouristique>
+        <tourismeDurable:matérielNécessaireActivitéTouristique
+        >matérielAT2</tourismeDurable:matérielNécessaireActivitéTouristique>
+        <tourismeDurable:nbrParticipants rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >30</tourismeDurable:nbrParticipants>
+        <tourismeDurable:dateFin>20-09-2024</tourismeDurable:dateFin>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </tourismeDurable:ActiviteTouristique>
+    </tourismeDurable:guide_Associé_ActivitéTouristique>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </tourismeDurable:guide>
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formateur2">
+    <tourismeDurable:role>roleF2</tourismeDurable:role>
+    <tourismeDurable:spécialitéFormateur>spécialité informatique</tourismeDurable:spécialitéFormateur>
+    <tourismeDurable:biographieFormateur>BiographieShayma</tourismeDurable:biographieFormateur>
+    <tourismeDurable:Formateur_Associé_Académie rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#académie1"/>
+    <tourismeDurable:nbrAnnéesExpérience rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >1</tourismeDurable:nbrAnnéesExpérience>
+    <tourismeDurable:Formateur_enseigne_FormationProfessionnelle rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formationProfesionnelle2"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formateur"/>
+    <tourismeDurable:formateur_Associé_FormationTouristique rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#formationTouristique2"/>
+    <tourismeDurable:nom>Shayma</tourismeDurable:nom>
+  </owl:NamedIndividual>
+  <tourismeDurable:Ferme rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#Ferme2">
+    <tourismeDurable:superficieFerme rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+    >10000</tourismeDurable:superficieFerme>
+    <tourismeDurable:nom>Ferme du Bonheur</tourismeDurable:nom>
+    <tourismeDurable:localisation>localisaiton F2</tourismeDurable:localisation>
+    <tourismeDurable:description>description F2</tourismeDurable:description>
+    <tourismeDurable:Ferme_participe_EvenementSaisonnier>
+      <tourismeDurable:EvenementSaisonnier rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvenementSaisonnier2">
+        <tourismeDurable:saisonEvenemetSaisonnier>printemps</tourismeDurable:saisonEvenemetSaisonnier>
+        <tourismeDurable:nom>ES2</tourismeDurable:nom>
+        <tourismeDurable:description>descriptionES2</tourismeDurable:description>
+        <tourismeDurable:date>20-10-2024</tourismeDurable:date>
+        <tourismeDurable:EvenementSaisonnier_contient_ActivitéAgricole>
+          <tourismeDurable:ActiviteAgricole rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActivitéAgricole2">
+            <tourismeDurable:prix rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+            >30</tourismeDurable:prix>
+            <tourismeDurable:nom>AA2</tourismeDurable:nom>
+            <tourismeDurable:nbrParticipants rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+            >70</tourismeDurable:nbrParticipants>
+            <tourismeDurable:localisation>Localisation AA2</tourismeDurable:localisation>
+            <tourismeDurable:durée rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+            >12</tourismeDurable:durée>
+            <tourismeDurable:description>decriptionAA2</tourismeDurable:description>
+            <tourismeDurable:ActivitéAgricole_Associé_EvenementSaisonnier rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#EvenementSaisonnier2"/>
+            <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+          </tourismeDurable:ActiviteAgricole>
+        </tourismeDurable:EvenementSaisonnier_contient_ActivitéAgricole>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </tourismeDurable:EvenementSaisonnier>
+    </tourismeDurable:Ferme_participe_EvenementSaisonnier>
+    <tourismeDurable:Ferme_Propose_ActivitéAgricole rdf:resource="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#ActivitéAgricole2"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </tourismeDurable:Ferme>
+  <rdf:Description rdf:about="http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable/Keychain">
+    <description>good</description>
+    <stock>50</stock>
+    <description>Aaaaaaaaaaaaaaaaaaa</description>
+    <prix>9.99</prix>
+  </rdf:Description>
+  <rdf:Description rdf:abou

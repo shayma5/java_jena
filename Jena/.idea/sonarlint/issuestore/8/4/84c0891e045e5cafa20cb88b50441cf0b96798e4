@@ -1,0 +1,23 @@
+
+
+java:S1192K"LDefine a constant instead of duplicating this literal "description" 3 times.(äÑéÜ8ëËßò¬2J$fdad747e-af4b-47d7-8237-33d144ed8f2d
+
+java:S1192L"FDefine a constant instead of duplicating this literal "stock" 3 times.(ÔøÿÚıÿÿÿÿ8ìËßò¬2J$102860ad-3670-4418-b1b1-caa92ead6ae4
+¾
+java:S1192V"vDefine a constant instead of duplicating this literal "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " 4 times.(Œ‹¼±úÿÿÿÿ8ìËßò¬2J$186a81b0-3821-42c6-800c-f0d47c53b55b
+‰
+java:S1192u"FDefine a constant instead of duplicating this literal "\" } " 3 times.(Ø×æÎ8ìËßò¬2J$bc714204-bdaf-4338-896e-7d2b45bca24e
+
+java:S1192w"FDefine a constant instead of duplicating this literal "\" ; " 3 times.(Óı¬Ãüÿÿÿÿ8ìËßò¬2J$86f8b2be-2626-4a2d-abee-1ccf469268d8
+•
+java:S3008"MRename this field "NS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸÀãøùÿÿÿÿ8ÿËßò¬2J$a8e064a2-4f59-49d9-ac0f-f8062ba88c45
+j
+java:S3010""Remove this assignment of "model".(éûî˜ûÿÿÿÿ8ˆÌßò¬2J$a0e4fa99-7bc4-4e09-b686-b92602fe3a15
+b
+java:S3010"Remove this assignment of "NS".(±´È8ˆÌßò¬2J$38d1cf9d-3088-42a6-917f-73031816fb69
+´
+java:S1130F"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(˜İÕüÿÿÿÿ8Æ¢Êô¬2J$debae37c-f31e-4efb-8fc1-85394e3ddfbe
+¯
+java:S1130n"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(şˆî8Ù¢Êô¬2J$e1bfb765-c792-42e8-8d1a-9688399872de
+|
+java:S1128"4Remove this unused import 'esprit.tools.JenaEngine'.(Ùâ•ûÿÿÿÿ8ê¢Êô¬2J$edfb0553-f3dd-48ac-a16e-8111749e9c98

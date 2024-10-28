@@ -1,0 +1,12 @@
+
+o
+java:S3008"MRename this field "NS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸÀãøùÿÿÿÿ8œÊ•ı¬2
+s
+java:S1450"QRemove the "NS" field and declare it as a local variable in the relevant methods.(ŸÀãøùÿÿÿÿ8ŸÊ•ı¬2
+v
+java:S1450"TRemove the "model" field and declare it as a local variable in the relevant methods.(¡«×ûÿÿÿÿ8 Ê•ı¬2
+G	java:S106"+Replace this use of System.out by a logger.(ÙßºÆ8­Ê•ı¬2
+I
+java:S1602",Remove useless curly braces around statement(è¶…Ğ8³Ê•ı¬2
+L	java:S106#"+Replace this use of System.out by a logger.(„Í‰¡úÿÿÿÿ8µÊ•ı¬2
+G	java:S106*"+Replace this use of System.out by a logger.(ò§‘8¸Ê•ı¬2

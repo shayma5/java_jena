@@ -1,0 +1,46 @@
+
+p
+java:S3740;"/Provide the parametrized type for this generic.(É…ÚøÿÿÿÿJ$d70e010f-846e-499f-92e0-dc20616ebf95
+Œ
+java:S1192"KDefine a constant instead of duplicating this literal " not found" 3 times.(±¦ó¨ûÿÿÿÿJ$e173ed57-db3f-491b-a505-0781d3d73344
+—
+java:S1488@"[Immediately return this expression instead of assigning it to the temporary variable "inf".(ÂÜ–÷J$fa93bbcc-0b93-4652-8733-1dce3c84c1a9
+n
+java:S2095M"LUse try-with-resources or close this "QueryExecution" in a "finally" clause.(îÊŸ›üÿÿÿÿ8Êëï¬2
+f
+java:S2583"DChange this condition so that it does not always evaluate to "false"(Ñ‹İ¶ÿÿÿÿÿ8Ìëï¬2
+f
+java:S2583g"DChange this condition so that it does not always evaluate to "false"(Ñ‹İ¶ÿÿÿÿÿ8Íëï¬2
+f
+java:S25830"DChange this condition so that it does not always evaluate to "false"(Ñ‹İ¶ÿÿÿÿÿ8Îëï¬2
+
+java:S3008"NRename this field "RDF" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õß«ÕıÿÿÿÿJ$65bf056a-3f67-4158-bcb0-5d38dda2161d
+v
+java:S1118":Add a private constructor to hide the implicit public one.(Íò¸ôJ$8760b102-d161-408c-baa3-5e5248894a32
+†
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(õß«ÕıÿÿÿÿJ$a6dcb074-621c-436a-a86f-51ef7f6fdc78
+
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Ôı¥‚J$a80c8455-f5f5-45f3-95ba-2adc2d3b6322
+H
+java:S1874"+Remove this use of "get"; it is deprecated.(¸¡éˆ8÷ëï¬2
+k	java:S106"+Replace this use of System.out by a logger.(±¦ó¨ûÿÿÿÿJ$a86825e6-26fd-45ab-a03a-628d6b04b80d
+s
+java:S1135""2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿJ$04cb4212-c758-447b-9bbc-2756e7915097
+
+java:S1124-"EReorder the modifiers to comply with the Java Language Specification.(ôäæJ$2684eef9-e585-4e6e-81cf-ec15f706bf2b
+H
+java:S1874/"+Remove this use of "get"; it is deprecated.(¡¶üµ8Ììï¬2
+f	java:S1061"+Replace this use of System.out by a logger.(Î¹ÑùJ$22f34e14-0ceb-4a45-b595-5d121de47b7e
+s
+java:S11357"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿJ$92f2fd45-1fec-4878-b1e7-af44dbaae134
+†
+java:S1124I"EReorder the modifiers to comply with the Java Language Specification.(™°ÏâúÿÿÿÿJ$d1c8b9a7-dad9-49c7-a00c-e1b03d4faa7e
+
+java:S1124c"EReorder the modifiers to comply with the Java Language Specification.(«¹©J$e0b3065f-1f97-48da-979e-c91ac6d73629
+M
+java:S1874f"+Remove this use of "get"; it is deprecated.(üİÇœûÿÿÿÿ8÷ìï¬2
+f	java:S106h"+Replace this use of System.out by a logger.(©åëãJ$99fe6912-307e-44d9-86f1-975d55c32cb3
+s
+java:S1135n"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿJ$e631845e-be97-479b-bd12-427efff0ae63
+h
+java:S1068"'Remove this unused "RDF" private field.(õß«ÕıÿÿÿÿJ$4d5ca1e3-e334-493f-9f40-a784af0d1e86

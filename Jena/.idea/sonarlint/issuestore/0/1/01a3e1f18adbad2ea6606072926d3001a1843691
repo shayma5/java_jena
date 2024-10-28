@@ -1,0 +1,23 @@
+
+
+java:S1192O"LDefine a constant instead of duplicating this literal "description" 3 times.(ı´ˆ8íš–ı¬2J$80bbe745-09cf-4687-855f-940f821e52b3
+‰
+java:S1192K"FDefine a constant instead of duplicating this literal "duree" 3 times.(Îƒ×®8íš–ı¬2J$26fb88f1-cb52-4a1c-a262-5c344ac22350
+•
+java:S1192M"MDefine a constant instead of duplicating this literal "localisation" 3 times.(† Èşÿÿÿÿ8îš–ı¬2J$4634c20c-45f2-4f42-a73d-53c5a9b61f89
+“
+java:S1192N"PDefine a constant instead of duplicating this literal "nbrParticipants" 3 times.(¡ˆ‘Ø8îš–ı¬2J$08b46b7e-a555-4b91-a023-913dac269018
+¾
+java:S1192X"vDefine a constant instead of duplicating this literal "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> " 4 times.(Œ‹¼±úÿÿÿÿ8îš–ı¬2J$0d3b13ff-89bf-49b2-8006-b8b0224ee2e5
+‰
+java:S1192{"FDefine a constant instead of duplicating this literal "\" } " 3 times.(Ø×æÎ8îš–ı¬2J$20735ff8-d166-496c-8236-36b1eff05d2c
+•
+java:S3008"MRename this field "NS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŸÀãøùÿÿÿÿ8×‚ı¬2J$7879a56d-2054-4935-beaf-b3f63ae05fe3
+e
+java:S3010""Remove this assignment of "model".(ñÒ®8ˆƒı¬2J$e5138d64-62c3-42a1-ada1-7edf28ac7258
+g
+java:S3010"Remove this assignment of "NS".(ÎŒÑµüÿÿÿÿ8ˆƒı¬2J$0a8f8e8f-5050-4295-91b7-7c05a5b1e264
+¯
+java:S1130F"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(ˆÒ÷‹8Ş›–ı¬2J$d006c686-b53f-4ba1-91c4-a405dfb9398a
+|
+java:S1128"4Remove this unused import 'esprit.tools.JenaEngine'.(Ùâ•ûÿÿÿÿ8‚ªı¬2J$c6aaacc7-e439-4202-bfa7-eb4ef3237ffa

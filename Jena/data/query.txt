@@ -1,0 +1,7 @@
+PREFIX ns: <http://www.semanticweb.org/rahmaslimi/ontologies/2024/8/tourismeDurable#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?personne
+WHERE {
+  ?personne rdf:type ns:Touriste .
+}
